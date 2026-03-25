@@ -1,0 +1,187 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    interpolate-size: allow-keywords;
+}
+
+html {
+    background-color: lightgoldenrodyellow;
+    /*overflow: hidden;*/
+}
+
+body {
+    display: grid;
+    /*grid-template-rows: auto 1fr auto;*/
+    min-height: 100vh;
+    padding-top: 7.3vw; /* Increased to compensate for fixed header + nav */
+}
+
+.Main {
+    display: grid;
+    /* height: 100vh; /* Critical: Locks the container to the screen height */ */
+    grid-template-rows: 60px 1fr 60px; /* Header, Body (flexible), Footer */
+    grid-template-columns: 1fr;
+}
+
+.heading {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: lightgoldenrodyellow; /* Match html background */
+}
+
+.el {
+    color: #002800;
+    text-align: center;
+    font-size: 3vw;
+    font-weight: 900;
+    font-stretch: expanded;
+    padding-block: 0.35ch;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: black;
+    background-color: #ddd;
+}
+
+a[href$=".pdf"]::after {
+    content: "(pdf)";
+    font-size: 0.5rem;
+    /*font-weight: bold;*/
+    color: bisque;
+    vertical-align: super;
+    margin-left: 4px;
+}
+
+a:focus-visable,
+summary:focus {
+    outline: 3px solid #ffbf47; /* Bright gold for high visibility */
+    outline-offset: 2px;
+}
+
+li a:hover {
+    color: black;
+    background-color: lightgrey;
+    outline: 2px solid lightgray;
+}
+
+.grid-container {
+    display: grid;
+    /* height: 100vh; /* Critical: Locks the container to the screen height */ */
+    grid-template-rows: 10ch 1fr 30px; /* Header+Nav, Body (flexible), Footer */
+    grid-template-columns: 1fr;
+}
+
+
+.container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+nav {
+    text-align: center;
+    background-color: #445e53;
+    justify-content: space-between 5ch;;
+    width: 100%; /* Ensure header spans full width */
+    z-index: 1000;
+}
+
+nav div {
+    text-decoration: none;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li a {
+    color: white;
+    font-family: system-ui, sans-serif;
+    font-size: 2.5vw;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.box {
+    background-color: bisque;
+    color: black;
+    font-size: 2.25vw;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0rem;
+    justify-content: center;
+    min-height: 200px;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+figure {
+    grid-column: span 2;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+}
+figcaption {
+    font-size: 0.1rem;
+}
+article {
+    margin-left: 2rem;
+}
+aside {
+    padding-left: 15px;
+}
+
+summary {
+    list-style-position: outside;
+}
+
+summary::marker {
+    font-size: 0.9rem;
+    color: gray;
+}
+
+details li {
+    padding-block: 0.5rem;
+    display: block;
+    font-weight: 600;
+}
+
+footer {
+    grid-column: span 2;
+    text-align: center;
+}
+
+/* Target the paragraphs and aside within your #about section */
+#about p,
+#about aside {
+    margin-bottom: 1.5rem; /* Adjust this value for more/less space */
+}
+
+/* Remove margin from the last element so it doesn't create extra bottom space */
+#about > *:last-child {
+    margin-bottom: 0;
+}
+
+/* Optional: Style the summary to look professional */
+summary h3 {
+    display: inline; /* Keeps the heading on the same line as the arrow */
+    cursor: pointer;
+    font-size: 1.1rem;
+}

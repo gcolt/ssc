@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  background-image: url("/img/paper_1280.jpg");
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  /* background-repeat: repeat-y; */
+  background-size: cover;
+}
+
+.bg-text {
+  color: black;
+  font-family: cursive;
+  font-size: 2.5rem;
+  font-weight: 900;
+  /* top: 5%; */
+  left: 50%;
+  z-index: 2;
+  /* padding: 10px; */
+  text-align: center;
+}
+
+h1 {
+  font-family: cursive;
+  font-size: 4rem;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}

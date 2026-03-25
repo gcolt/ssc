@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "arial", sans-serif;
+  font-size: 2.3svw;
+  min-height: 100svh;
+  background-color: hsl(33, 100%, 88%, 60%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  min-height: 80svh;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.blue {
+  background-color: #00f;
+}
+.red {
+  background-color: #f00;
+}
+.green {
+  background-color: green;
+}
+.yellow {
+  background-color: yellow;
+  color: black;
+}
+.hgreen {
+  background-color: rgb(1, 78, 1);
+}
+
+header,
+footer {
+  color: #fff;
+  text-align: center;
+  height: auto;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  font-size: 3.5svw;
+}
+
+footer {
+  background-color: #000;
+  position: sticky;
+  bottom: 0;
+  font-size: 3.5svw;
+  box-sizing: content-box;
+}
+
+li {
+  display: inline;
+  padding: 1px;
+  background-color: #000;
+}
+a {
+  color: antiquewhite;
+}
+a:visited {
+  color: #3cd815;
+}

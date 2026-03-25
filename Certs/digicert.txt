@@ -1,0 +1,26 @@
+Hello,
+
+Your certificate for georgecolt.com is approved.
+The DigiCert order number for this certificate is 1316403177.
+
+Certificate Details
+Account ID: 1663104
+Division: Vitalwerks Internet Solutions, LLC (dba No-IP)
+Product: RapidSSL Standard DV
+Serial Number: 08f065984b572bf79631d9d864f7ce95
+Common Name: georgecolt.com
+SANs: georgecolt.com
+Order Validity Years: 1
+Certificate Validity Start Date: 2025-07-14
+Certificate Validity End Date: 2026-07-13
+Issuer Name: /C=US/O=DigiCert Inc/OU=www.digicert.com/CN=RapidSSL TLS RSA CA G1
+
+Please find your new certificate attached to this email .
+
+Our online Certificate installation instructions can be found at:
+www.digicert.com/ssl-certificate-installation.htm
+
+Thanks!
+
+The DigiCert Team
+

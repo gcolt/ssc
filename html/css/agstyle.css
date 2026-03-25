@@ -1,0 +1,54 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: solid green; */
+}
+
+html {
+  background-color: bisque;
+}
+
+.wrapper {
+  outline: 3px solid darkblue;
+  width: min(926px 100% - 4rem);
+  margin-inline: auto;
+}
+
+.ag {
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight: 700;
+  font-stretch: expanded;
+  padding-top: 0.55em;
+  padding-bottom: 0.5em;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+ul {
+  padding-left: 5rem;
+  padding-top: 0.5rem;
+  font-weight: 600;
+  list-style-type: disc;
+}
+
+ol {
+  padding-left: 5rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+li {
+  padding-bottom: 0.1rem;
+}
+
+article {
+  font-size: 1.4rem;
+}
